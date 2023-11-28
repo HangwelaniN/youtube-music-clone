@@ -1,3 +1,102 @@
 .App {
   text-align: center;
 }
+.App {
+  font-family: Roboto, "Noto Naskh Arabic UI", Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+.bars {
+  padding-top: 10px;
+  margin: 0 7px 0 15px;
+}
+
+.logo {
+  color: rgb(221, 163, 221);
+}
+.logos {
+  padding-top: 5px;
+  margin-left: 3px;
+}
+.input {
+  background-color: transparent;
+  border: 1px solid rgb(121, 118, 118);
+  border-radius: 5px;
+  width: 20rem;
+  height: 35px;
+}
+::placeholder {
+  color: rgb(199, 194, 194);
+}
+
+.vl {
+  border-left: 1px solid rgb(121, 118, 118);
+  height: 500px;
+  position: absolute;
+  left: 12%;
+  margin-left: -3px;
+  top: -1;
+  margin-top: -1;
+}
+.row {
+  margin: 15px 0 15px 15px;
+  font-size: 12px;
+}
+.hor {
+  width: 10%;
+  margin: 40px 10px 10px 10px;
+}
+.smaller {
+  background-color: transparent;
+  border: 1px solid rgb(121, 118, 118);
+  border-radius: 20px;
+  width: 8rem;
+  height: 25px;
+  margin: 10px;
+}
+.size {
+  font-size: 12px;
+  display: flex;
+  justify-content: start;
+}
+.sizes {
+  font-size: 10px;
+  display: flex;
+  justify-content: start;
+  color: rgb(190, 188, 188);
+}
+.only,
+ul,
+.smaller,
+.hor {
+  display: none;
+}
+@media (max-width: 800px) {
+  .input {
+    width: 13rem;
+    height: 25px;
+    border-radius: 10px;
+  }
+
+  .only {
+    display: block;
+    font-size: 8px;
+    margin: 0;
+  }
+  ::placeholder {
+    font-size: 10px;
+  }
+
+  .none {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  ul,
+  .smaller,
+  .hor {
+    display: block;
+  }
+}
