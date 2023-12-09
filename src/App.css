@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-}
-.App {
   font-family: Roboto, "Noto Naskh Arabic UI", Arial, sans-serif;
 }
 
@@ -20,6 +18,10 @@ li {
   padding-top: 5px;
   margin-left: 3px;
 }
+.loud {
+  padding: 0 0 0 20px;
+  font-size: 10px;
+}
 .input {
   background-color: transparent;
   border: 1px solid rgb(121, 118, 118);
@@ -33,20 +35,20 @@ li {
 
 .vl {
   border-left: 1px solid rgb(121, 118, 118);
-  height: 500px;
+  height: 470px;
   position: absolute;
-  left: 12%;
+  left: 200px;
   margin-left: -3px;
-  top: -1;
-  margin-top: -1;
+  top: 9%;
+  margin-top: -1px;
 }
-.row {
-  margin: 15px 0 15px 15px;
-  font-size: 12px;
-}
+
 .hor {
   width: 10%;
-  margin: 40px 10px 10px 10px;
+  margin: 25px;
+}
+.last {
+  padding-left: 20px;
 }
 .smaller {
   background-color: transparent;
@@ -59,27 +61,34 @@ li {
 .size {
   font-size: 12px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
 }
 .sizes {
   font-size: 10px;
+  color: #bebcbc;
   display: flex;
-  justify-content: start;
-  color: rgb(190, 188, 188);
+  justify-content: flex-start;
 }
-.only,
-ul,
-.smaller,
-.hor {
+.searched {
+  display: none;
+}
+.none,
+.only {
   display: none;
 }
 @media (max-width: 800px) {
-  .input {
-    width: 13rem;
-    height: 25px;
-    border-radius: 10px;
+  .vl {
+    display: none;
   }
-
+  .search {
+    display: none;
+  }
+  .searched {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0;
+    font-size: 18px;
+  }
   .only {
     display: block;
     font-size: 8px;
@@ -88,15 +97,22 @@ ul,
   ::placeholder {
     font-size: 10px;
   }
-
-  .none {
+  .move {
+    text-align: left;
+    padding: 15px 0 0 50px;
+  }
+  .last {
     display: none;
   }
 }
+
 @media (min-width: 1000px) {
-  ul,
-  .smaller,
-  .hor {
+  .none {
     display: block;
+  }
+
+  .move {
+    text-align: left;
+    padding: 15px 0 0 50px;
   }
 }

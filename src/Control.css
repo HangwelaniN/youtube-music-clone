@@ -1,0 +1,16 @@
+.control {
+  background-color: rgb(33, 33, 33);
+}
+
+.hr {
+  width: 85rem;
+  border: 2px solid rgb(255, 0, 0);
+}
+.font {
+  font-size: 20px;
+  color: rgb(221, 221, 221);
+  padding-top: 5px;
+}
+.fonte {
+  font-size: 35px;
+}
